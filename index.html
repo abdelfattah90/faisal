@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>مربط الفيصل — Prototype</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+        font-family: Tahoma, 'Segoe UI', Arial, sans-serif;
+        background: #ffffff;
+        color: #33342e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .wrap {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+      .side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+      .side h2 {
+        margin: 0;
+        color: #696d7d;
+        font-size: 18px;
+      }
+      .side a {
+        display: inline-block;
+        padding: 12px 28px;
+        text-decoration: none;
+        color: #fff;
+        background: #b55279;
+        border-radius: 6px;
+        font-size: 15px;
+      }
+      .side a:hover {
+        background: #5885d8;
+      }
+      .divider {
+        width: 1px;
+        height: 140px;
+        background: #5885d8;
+      }
+      .title {
+        position: absolute;
+        top: 40px;
+        text-align: center;
+        width: 100%;
+        color: #696d7d;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">مربط الفيصل — Prototype</div>
+
+    <div class="wrap">
+      <div class="side">
+        <h2>Store</h2>
+        <a href="store/index.html" target="_blank">دخول</a>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="side">
+        <h2>Admin</h2>
+        <a href="admin/login.html" target="_blank">دخول</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>أوقاتي المتاحة | لوحة تحكم مربط الفيصل</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">مربط الفيصل — لوحة التحكم</div>
+  <div class="role-tag">Coach</div>
+</div>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="group-label">عام</div>
+    <a href="overview.html">نظرة عامة</a>
+    <div class="group-label">الإدارة</div>
+    <a href="plans-management.html">الباقات</a>
+    <a href="bookings-management.html">الحجوزات</a>
+    <a href="subscriptions-management.html">الاشتراكات</a>
+    <a href="trip-subscriptions-management.html">اشتراكات الرحلات</a>
+    <a href="users-management.html">المستخدمون</a>
+    <a href="coaches-management.html">المدربون</a>
+    <a href="transactions-log.html">سجل المدفوعات</a>
+    <div class="group-label">النظام</div>
+    <a href="admins-management.html">🔒 الأدمن والصلاحيات</a>
+    <a href="financial-reports.html">🔒 التقارير المالية</a>
+    <a href="settings.html">🔒 الإعدادات العامة</a>
+    <div class="group-label">Coach</div>
+    <a href="coach-availability.html" class="active">أوقاتي المتاحة</a>
+    <a href="coach-my-trainees.html">متدربيني</a>
+  </aside>
+
+  <main class="content">
+    <h1 class="page-title">أوقاتي المتاحة</h1>
+
+    <div class="section">
+      <div class="section-title">
+        <span>الجدول الأسبوعي</span>
+        <a href="#" class="btn btn-primary btn-sm">+ إضافة وقت متاح</a>
+      </div>
+
+      <table class="table">
+        <tr><th>اليوم</th><th>من</th><th>إلى</th><th>النوع</th><th></th></tr>
+        <tr>
+          <td>الأحد</td><td>9:00 ص</td><td>12:00 م</td><td>عام</td>
+          <td><a href="#" class="btn btn-outline btn-sm">حذف</a></td>
+        </tr>
+        <tr>
+          <td>الأحد</td><td>5:30 م</td><td>10:30 م</td><td>نسائي فقط</td>
+          <td><a href="#" class="btn btn-outline btn-sm">حذف</a></td>
+        </tr>
+        <tr>
+          <td>الثلاثاء</td><td>5:30 م</td><td>10:30 م</td><td>نسائي فقط</td>
+          <td><a href="#" class="btn btn-outline btn-sm">حذف</a></td>
+        </tr>
+        <tr>
+          <td>الخميس</td><td>4:00 م</td><td>8:00 م</td><td>عام</td>
+          <td><a href="#" class="btn btn-outline btn-sm">حذف</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-title">إضافة وقت جديد</div>
+      <div class="grid-3">
+        <div class="form-group">
+          <label>اليوم</label>
+          <select><option>الأحد</option><option>الاثنين</option><option>الثلاثاء</option></select>
+        </div>
+        <div class="form-group">
+          <label>من</label>
+          <input type="text" placeholder="9:00 ص">
+        </div>
+        <div class="form-group">
+          <label>إلى</label>
+          <input type="text" placeholder="12:00 م">
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary">حفظ الوقت</a>
+    </div>
+  </main>
+
+</div>
+
+</body>
+</html>

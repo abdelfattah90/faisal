@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>الإعدادات العامة | لوحة تحكم مربط الفيصل</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="logo">مربط الفيصل — لوحة التحكم</div>
+      <div class="role-tag">SuperAdmin</div>
+    </div>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="group-label">عام</div>
+        <a href="overview.html">نظرة عامة</a>
+        <div class="group-label">الإدارة</div>
+        <a href="plans-management.html">الباقات</a>
+        <a href="bookings-management.html">الحجوزات</a>
+        <a href="subscriptions-management.html">الاشتراكات</a>
+        <a href="trip-subscriptions-management.html">اشتراكات الرحلات</a>
+        <a href="users-management.html">المستخدمون</a>
+        <a href="coaches-management.html">المدربون</a>
+        <a href="transactions-log.html">سجل المدفوعات</a>
+        <div class="group-label">النظام</div>
+        <a href="admins-management.html">🔒 الأدمن والصلاحيات</a>
+        <a href="financial-reports.html">🔒 التقارير المالية</a>
+        <a href="settings.html" class="active">🔒 الإعدادات العامة</a>
+        <div class="group-label">Coach</div>
+        <a href="coach-availability.html">أوقاتي المتاحة</a>
+        <a href="coach-my-trainees.html">متدربيني</a>
+      </aside>
+
+      <main class="content">
+        <h1 class="page-title">الإعدادات العامة</h1>
+
+        <div class="section form-box" style="max-width: 520px">
+          <div class="section-title">بيانات المربط</div>
+          <div class="form-group">
+            <label>اسم المربط</label>
+            <input type="text" value="مربط الفيصل اف اند ان" />
+          </div>
+          <div class="form-group">
+            <label>رقم التواصل</label>
+            <input type="text" value="0112345678" />
+          </div>
+          <a
+            href="#"
+            class="btn btn-primary"
+            style="width: 100%; text-align: center; display: block"
+            >حفظ</a
+          >
+        </div>
+
+        <div class="section form-box" style="max-width: 520px">
+          <div class="section-title">الأوقات النسائية الحصرية</div>
+          <div class="form-group">
+            <label>الأيام</label>
+            <input type="text" value="الأحد، الثلاثاء" />
+          </div>
+          <div class="form-group">
+            <label>الفترة الزمنية</label>
+            <input type="text" value="5:30م — 10:30م" />
+          </div>
+          <a
+            href="#"
+            class="btn btn-primary"
+            style="width: 100%; text-align: center; display: block"
+            >حفظ</a
+          >
+        </div>
+
+        <div class="section form-box" style="max-width: 520px">
+          <div class="section-title">بوابات الدفع</div>
+          <div class="form-group">
+            <label>Tabby</label>
+            <select>
+              <option>مفعّلة</option>
+              <option>معطّلة</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>بوابة الدفع العادية</label>
+            <select>
+              <option>غير محددة بعد</option>
+            </select>
+          </div>
+          <a
+            href="#"
+            class="btn btn-primary"
+            style="width: 100%; text-align: center; display: block"
+            >حفظ</a
+          >
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>إدارة المدربين | لوحة تحكم مربط الفيصل</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">مربط الفيصل — لوحة التحكم</div>
+  <div class="role-tag">Admin</div>
+</div>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="group-label">عام</div>
+    <a href="overview.html">نظرة عامة</a>
+    <div class="group-label">الإدارة</div>
+    <a href="plans-management.html">الباقات</a>
+    <a href="bookings-management.html">الحجوزات</a>
+    <a href="subscriptions-management.html">الاشتراكات</a>
+    <a href="trip-subscriptions-management.html">اشتراكات الرحلات</a>
+    <a href="users-management.html">المستخدمون</a>
+    <a href="coaches-management.html" class="active">المدربون</a>
+    <a href="transactions-log.html">سجل المدفوعات</a>
+    <div class="group-label">النظام</div>
+    <a href="admins-management.html">🔒 الأدمن والصلاحيات</a>
+    <a href="financial-reports.html">🔒 التقارير المالية</a>
+    <a href="settings.html">🔒 الإعدادات العامة</a>
+    <div class="group-label">Coach</div>
+    <a href="coach-availability.html">أوقاتي المتاحة</a>
+    <a href="coach-my-trainees.html">متدربيني</a>
+  </aside>
+
+  <main class="content">
+    <h1 class="page-title">إدارة المدربين</h1>
+
+    <div class="section">
+      <div class="toolbar">
+        <input type="text" placeholder="بحث باسم المدرب...">
+        <a href="#" class="btn btn-primary">+ إضافة مدرب</a>
+      </div>
+
+      <table class="table">
+        <tr><th>الاسم</th><th>التخصص</th><th>عدد المتدربين</th><th>الحالة</th><th></th></tr>
+        <tr>
+          <td>كوتش أحمد</td><td>قفز حواجز، ركوب أرضي</td><td>18</td>
+          <td><span class="badge badge-active">نشط</span></td>
+          <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+        </tr>
+        <tr>
+          <td>كوتش سارة</td><td>قفز حواجز (نسائي)</td><td>12</td>
+          <td><span class="badge badge-active">نشط</span></td>
+          <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+        </tr>
+        <tr>
+          <td>كوتش فيصل</td><td>رماية أرضية</td><td>9</td>
+          <td><span class="badge badge-active">نشط</span></td>
+          <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+        </tr>
+        <tr>
+          <td>كوتش ماجد</td><td>ركوب أرضي</td><td>0</td>
+          <td><span class="badge badge-inactive">معطّل</span></td>
+          <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+</div>
+
+</body>
+</html>

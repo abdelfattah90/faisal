@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>التقارير المالية | لوحة تحكم مربط الفيصل</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">مربط الفيصل — لوحة التحكم</div>
+  <div class="role-tag">SuperAdmin</div>
+</div>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="group-label">عام</div>
+    <a href="overview.html">نظرة عامة</a>
+    <div class="group-label">الإدارة</div>
+    <a href="plans-management.html">الباقات</a>
+    <a href="bookings-management.html">الحجوزات</a>
+    <a href="subscriptions-management.html">الاشتراكات</a>
+    <a href="trip-subscriptions-management.html">اشتراكات الرحلات</a>
+    <a href="users-management.html">المستخدمون</a>
+    <a href="coaches-management.html">المدربون</a>
+    <a href="transactions-log.html">سجل المدفوعات</a>
+    <div class="group-label">النظام</div>
+    <a href="admins-management.html">🔒 الأدمن والصلاحيات</a>
+    <a href="financial-reports.html" class="active">🔒 التقارير المالية</a>
+    <a href="settings.html">🔒 الإعدادات العامة</a>
+    <div class="group-label">Coach</div>
+    <a href="coach-availability.html">أوقاتي المتاحة</a>
+    <a href="coach-my-trainees.html">متدربيني</a>
+  </aside>
+
+  <main class="content">
+    <h1 class="page-title">التقارير المالية</h1>
+
+    <div class="grid-4">
+      <div class="stat-card">
+        <div class="stat-value">184,200 ر.س</div>
+        <div class="stat-label">إيرادات الشهر</div>
+        <div class="stat-trend up">↑ 14% عن الشهر الماضي</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">62,400 ر.س</div>
+        <div class="stat-label">إيرادات Tabby (تقسيط)</div>
+        <div class="stat-trend up">↑ 9%</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">3,100 ر.س</div>
+        <div class="stat-label">مدفوعات فاشلة</div>
+        <div class="stat-trend down">↓ 2%</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">96</div>
+        <div class="stat-label">اشتراك رحلات نشط</div>
+      </div>
+    </div>
+
+    <div class="section" style="margin-top:20px;">
+      <div class="section-title">الإيرادات حسب الفئة</div>
+      <div style="height:180px; background:var(--almond-cream); border-radius:6px; display:flex; align-items:center; justify-content:center; color:var(--blue-slate); font-size:13px;">
+        [ رسم بياني — Bar Chart: فردية / جماعية / رحلات / خدمات فردية ]
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">
+        <span>تقرير مفصّل</span>
+        <a href="#" class="btn btn-outline btn-sm">تصدير Excel</a>
+      </div>
+      <table class="table">
+        <tr><th>الشهر</th><th>إجمالي الإيرادات</th><th>عدد المعاملات</th><th>متوسط قيمة المعاملة</th></tr>
+        <tr><td>يوليو 2026</td><td>184,200 ر.س</td><td>312</td><td>590 ر.س</td></tr>
+        <tr><td>يونيو 2026</td><td>161,500 ر.س</td><td>289</td><td>559 ر.س</td></tr>
+        <tr><td>مايو 2026</td><td>148,900 ر.س</td><td>270</td><td>551 ر.س</td></tr>
+      </table>
+    </div>
+  </main>
+
+</div>
+
+</body>
+</html>

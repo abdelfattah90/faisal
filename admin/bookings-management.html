@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>إدارة الحجوزات | لوحة تحكم مربط الفيصل</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="logo">مربط الفيصل — لوحة التحكم</div>
+      <div class="role-tag">Admin</div>
+    </div>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="group-label">عام</div>
+        <a href="overview.html">نظرة عامة</a>
+
+        <div class="group-label">الإدارة</div>
+        <a href="plans-management.html">الباقات</a>
+        <a href="bookings-management.html" class="active">الحجوزات</a>
+        <a href="subscriptions-management.html">الاشتراكات</a>
+        <a href="trip-subscriptions-management.html">اشتراكات الرحلات</a>
+        <a href="users-management.html">المستخدمون</a>
+        <a href="coaches-management.html">المدربون</a>
+        <a href="transactions-log.html">سجل المدفوعات</a>
+
+        <div class="group-label">النظام</div>
+        <a href="admins-management.html">🔒 الأدمن والصلاحيات</a>
+        <a href="financial-reports.html">🔒 التقارير المالية</a>
+        <a href="settings.html">🔒 الإعدادات العامة</a>
+        <div class="group-label">Coach</div>
+        <a href="coach-availability.html">أوقاتي المتاحة</a>
+        <a href="coach-my-trainees.html">متدربيني</a>
+      </aside>
+
+      <main class="content">
+        <h1 class="page-title">إدارة الحجوزات</h1>
+
+        <div class="section">
+          <div class="toolbar">
+            <input type="text" placeholder="بحث باسم المتدرب..." />
+            <div>
+              <select
+                style="
+                  padding: 8px 12px;
+                  border: 1px solid var(--dry-sage);
+                  border-radius: 5px;
+                  font-size: 13px;
+                "
+              >
+                <option>كل الحالات</option>
+                <option>قادم</option>
+                <option>مكتمل</option>
+                <option>ملغي</option>
+              </select>
+            </div>
+          </div>
+
+          <table class="table">
+            <tr>
+              <th>المتدرب</th>
+              <th>الباقة</th>
+              <th>المدرب</th>
+              <th>الموعد</th>
+              <th>الحالة</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>سارة أحمد</td>
+              <td>قفز حواجز</td>
+              <td>كوتش سارة</td>
+              <td>12 يوليو — 10:00 ص</td>
+              <td><span class="badge badge-active">قادم</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تفاصيل</a></td>
+            </tr>
+            <tr>
+              <td>محمد علي</td>
+              <td>رحلة الساحل الشمالي</td>
+              <td>—</td>
+              <td>5 يوليو — 7:00 ص</td>
+              <td><span class="badge badge-pending">مكتمل</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تفاصيل</a></td>
+            </tr>
+            <tr>
+              <td>نورة خالد</td>
+              <td>ركوب أرضي</td>
+              <td>كوتش أحمد</td>
+              <td>3 يوليو — 4:00 م</td>
+              <td><span class="badge badge-inactive">ملغي</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تفاصيل</a></td>
+            </tr>
+            <tr>
+              <td>فهد سعيد</td>
+              <td>رماية أرضية</td>
+              <td>كوتش فيصل</td>
+              <td>15 يوليو — 5:00 م</td>
+              <td><span class="badge badge-active">قادم</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تفاصيل</a></td>
+            </tr>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

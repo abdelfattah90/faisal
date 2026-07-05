@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>إدارة الأدمن | لوحة تحكم مربط الفيصل</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="logo">مربط الفيصل — لوحة التحكم</div>
+      <div class="role-tag">SuperAdmin</div>
+    </div>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="group-label">عام</div>
+        <a href="overview.html">نظرة عامة</a>
+
+        <div class="group-label">الإدارة</div>
+        <a href="plans-management.html">الباقات</a>
+        <a href="bookings-management.html">الحجوزات</a>
+        <a href="subscriptions-management.html">الاشتراكات</a>
+        <a href="trip-subscriptions-management.html">اشتراكات الرحلات</a>
+        <a href="users-management.html">المستخدمون</a>
+        <a href="coaches-management.html">المدربون</a>
+        <a href="transactions-log.html">سجل المدفوعات</a>
+
+        <div class="group-label">النظام</div>
+        <a href="admins-management.html" class="active">🔒 الأدمن والصلاحيات</a>
+        <a href="financial-reports.html">🔒 التقارير المالية</a>
+        <a href="settings.html">🔒 الإعدادات العامة</a>
+
+        <div class="group-label">Coach</div>
+        <a href="coach-availability.html">أوقاتي المتاحة</a>
+        <a href="coach-my-trainees.html">متدربيني</a>
+      </aside>
+
+      <main class="content">
+        <h1 class="page-title">إدارة الأدمن والصلاحيات</h1>
+
+        <div class="section">
+          <div class="toolbar">
+            <input type="text" placeholder="بحث بالاسم..." />
+            <a href="#" class="btn btn-primary">+ إضافة Admin / SubAdmin</a>
+          </div>
+
+          <table class="table">
+            <tr>
+              <th>الاسم</th>
+              <th>البريد الإلكتروني</th>
+              <th>الدور</th>
+              <th>الصلاحيات</th>
+              <th>الحالة</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>عبدالله الفيصل</td>
+              <td>abdullah@alfaisalstud.com</td>
+              <td>SuperAdmin</td>
+              <td>كامل الصلاحيات</td>
+              <td><span class="badge badge-active">نشط</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+            </tr>
+            <tr>
+              <td>منى العتيبي</td>
+              <td>mona@alfaisalstud.com</td>
+              <td>Admin</td>
+              <td>باقات، حجوزات، اشتراكات، مستخدمين</td>
+              <td><span class="badge badge-active">نشط</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+            </tr>
+            <tr>
+              <td>يوسف القحطاني</td>
+              <td>yousef@alfaisalstud.com</td>
+              <td>SubAdmin</td>
+              <td>حجوزات فقط</td>
+              <td><span class="badge badge-active">نشط</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+            </tr>
+            <tr>
+              <td>هند الشمري</td>
+              <td>hind@alfaisalstud.com</td>
+              <td>SubAdmin</td>
+              <td>مستخدمين فقط</td>
+              <td><span class="badge badge-inactive">موقوف</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+            </tr>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

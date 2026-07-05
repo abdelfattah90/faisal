@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>متدربيني | لوحة تحكم مربط الفيصل</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">مربط الفيصل — لوحة التحكم</div>
+  <div class="role-tag">Coach</div>
+</div>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="group-label">عام</div>
+    <a href="overview.html">نظرة عامة</a>
+    <div class="group-label">الإدارة</div>
+    <a href="plans-management.html">الباقات</a>
+    <a href="bookings-management.html">الحجوزات</a>
+    <a href="subscriptions-management.html">الاشتراكات</a>
+    <a href="trip-subscriptions-management.html">اشتراكات الرحلات</a>
+    <a href="users-management.html">المستخدمون</a>
+    <a href="coaches-management.html">المدربون</a>
+    <a href="transactions-log.html">سجل المدفوعات</a>
+    <div class="group-label">النظام</div>
+    <a href="admins-management.html">🔒 الأدمن والصلاحيات</a>
+    <a href="financial-reports.html">🔒 التقارير المالية</a>
+    <a href="settings.html">🔒 الإعدادات العامة</a>
+    <div class="group-label">Coach</div>
+    <a href="coach-availability.html">أوقاتي المتاحة</a>
+    <a href="coach-my-trainees.html" class="active">متدربيني</a>
+  </aside>
+
+  <main class="content">
+    <h1 class="page-title">متدربيني</h1>
+
+    <div class="section">
+      <div class="toolbar">
+        <input type="text" placeholder="بحث باسم المتدرب...">
+      </div>
+
+      <table class="table">
+        <tr><th>المتدرب</th><th>الباقة</th><th>آخر حضور</th><th>عدد الحصص المكتملة</th><th>التقدّم</th></tr>
+        <tr>
+          <td>سارة أحمد</td><td>قفز حواجز</td><td>28 يونيو 2026</td><td>5 / 8</td>
+          <td><span class="badge badge-active">جيد</span></td>
+        </tr>
+        <tr>
+          <td>ريم عبدالله</td><td>قفز حواجز</td><td>25 يونيو 2026</td><td>2 / 8</td>
+          <td><span class="badge badge-pending">متأخر</span></td>
+        </tr>
+        <tr>
+          <td>هدى ناصر</td><td>قفز حواجز</td><td>1 يوليو 2026</td><td>8 / 8</td>
+          <td><span class="badge badge-active">مكتمل</span></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-title">تسجيل حضور اليوم</div>
+      <div class="grid-2">
+        <div>
+          <p style="margin:0 0 4px; font-weight:bold; color:var(--blue-slate);">سارة أحمد</p>
+          <p class="stat-label" style="margin:0;">قفز حواجز — 10:00 ص</p>
+        </div>
+        <div style="text-align:left;">
+          <a href="#" class="btn btn-primary btn-sm">تسجيل حضور</a>
+          <a href="#" class="btn btn-outline btn-sm">غياب</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+</body>
+</html>

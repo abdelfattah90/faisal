@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>إدارة الباقات | لوحة تحكم مربط الفيصل</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="logo">مربط الفيصل — لوحة التحكم</div>
+      <div class="role-tag">Admin</div>
+    </div>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="group-label">عام</div>
+        <a href="overview.html">نظرة عامة</a>
+
+        <div class="group-label">الإدارة</div>
+        <a href="plans-management.html" class="active">الباقات</a>
+        <a href="bookings-management.html">الحجوزات</a>
+        <a href="subscriptions-management.html">الاشتراكات</a>
+        <a href="trip-subscriptions-management.html">اشتراكات الرحلات</a>
+        <a href="users-management.html">المستخدمون</a>
+        <a href="coaches-management.html">المدربون</a>
+        <a href="transactions-log.html">سجل المدفوعات</a>
+
+        <div class="group-label">النظام</div>
+        <a href="admins-management.html">🔒 الأدمن والصلاحيات</a>
+        <a href="financial-reports.html">🔒 التقارير المالية</a>
+        <a href="settings.html">🔒 الإعدادات العامة</a>
+        <div class="group-label">Coach</div>
+        <a href="coach-availability.html">أوقاتي المتاحة</a>
+        <a href="coach-my-trainees.html">متدربيني</a>
+      </aside>
+
+      <main class="content">
+        <h1 class="page-title">إدارة الباقات</h1>
+
+        <div class="section">
+          <div class="toolbar">
+            <input type="text" placeholder="بحث عن باقة..." />
+            <a href="#" class="btn btn-primary">+ إضافة باقة جديدة</a>
+          </div>
+
+          <table class="table">
+            <tr>
+              <th>اسم الباقة</th>
+              <th>الفئة</th>
+              <th>عدد الحصص</th>
+              <th>الصلاحية</th>
+              <th>السعر</th>
+              <th>الحالة</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>قفز حواجز</td>
+              <td>فردية</td>
+              <td>8</td>
+              <td>أسبوعين</td>
+              <td>750 ر.س</td>
+              <td><span class="badge badge-active">مفعّلة</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+            </tr>
+            <tr>
+              <td>ركوب أرضي</td>
+              <td>فردية</td>
+              <td>10</td>
+              <td>شهر</td>
+              <td>600 ر.س</td>
+              <td><span class="badge badge-active">مفعّلة</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+            </tr>
+            <tr>
+              <td>رماية أرضية</td>
+              <td>فردية</td>
+              <td>6</td>
+              <td>شهر ونصف</td>
+              <td>500 ر.س</td>
+              <td><span class="badge badge-active">مفعّلة</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+            </tr>
+            <tr>
+              <td>باقة جماعية (3 أشخاص)</td>
+              <td>جماعية</td>
+              <td>—</td>
+              <td>شهر</td>
+              <td>1400 ر.س</td>
+              <td><span class="badge badge-active">مفعّلة</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+            </tr>
+            <tr>
+              <td>اشتراك رحلات شهري</td>
+              <td>رحلات</td>
+              <td>8/شهر</td>
+              <td>شهر</td>
+              <td>900 ر.س</td>
+              <td><span class="badge badge-active">مفعّلة</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+            </tr>
+            <tr>
+              <td>حصة سباحة منفردة</td>
+              <td>خدمة فردية</td>
+              <td>1</td>
+              <td>—</td>
+              <td>80 ر.س</td>
+              <td><span class="badge badge-inactive">معطّلة</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">تعديل</a></td>
+            </tr>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

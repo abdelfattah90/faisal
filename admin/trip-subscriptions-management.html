@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>إدارة اشتراكات الرحلات | لوحة تحكم مربط الفيصل</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="logo">مربط الفيصل — لوحة التحكم</div>
+      <div class="role-tag">Admin</div>
+    </div>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="group-label">عام</div>
+        <a href="overview.html">نظرة عامة</a>
+
+        <div class="group-label">الإدارة</div>
+        <a href="plans-management.html">الباقات</a>
+        <a href="bookings-management.html">الحجوزات</a>
+        <a href="subscriptions-management.html">الاشتراكات</a>
+        <a href="trip-subscriptions-management.html" class="active"
+          >اشتراكات الرحلات</a
+        >
+        <a href="users-management.html">المستخدمون</a>
+        <a href="coaches-management.html">المدربون</a>
+        <a href="transactions-log.html">سجل المدفوعات</a>
+
+        <div class="group-label">النظام</div>
+        <a href="admins-management.html">🔒 الأدمن والصلاحيات</a>
+        <a href="financial-reports.html">🔒 التقارير المالية</a>
+        <a href="settings.html">🔒 الإعدادات العامة</a>
+        <div class="group-label">Coach</div>
+        <a href="coach-availability.html">أوقاتي المتاحة</a>
+        <a href="coach-my-trainees.html">متدربيني</a>
+      </aside>
+
+      <main class="content">
+        <h1 class="page-title">إدارة اشتراكات الرحلات</h1>
+
+        <div class="section">
+          <div class="section-title">
+            <span>ملخص الـ Quota الشهري</span>
+          </div>
+          <div class="grid-3">
+            <div class="stat-card">
+              <div class="stat-value">96</div>
+              <div class="stat-label">إجمالي مشتركي الرحلات</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">612</div>
+              <div class="stat-label">رحلات مستخدمة هذا الشهر</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">156</div>
+              <div class="stat-label">رحلات ستُفقد (No Rollover)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="toolbar">
+            <input type="text" placeholder="بحث باسم المتدرب..." />
+          </div>
+
+          <table class="table">
+            <tr>
+              <th>المتدرب</th>
+              <th>نوع الاشتراك</th>
+              <th>المستخدم هذا الشهر</th>
+              <th>الحالة</th>
+            </tr>
+            <tr>
+              <td>سارة أحمد</td>
+              <td>شهري</td>
+              <td>5 / 8</td>
+              <td><span class="badge badge-active">نشط</span></td>
+            </tr>
+            <tr>
+              <td>خالد المطيري</td>
+              <td>سنوي</td>
+              <td>8 / 8</td>
+              <td><span class="badge badge-active">نشط — مكتمل الحصة</span></td>
+            </tr>
+            <tr>
+              <td>ريم عبدالله</td>
+              <td>6 أشهر</td>
+              <td>2 / 8</td>
+              <td><span class="badge badge-active">نشط</span></td>
+            </tr>
+          </table>
+          <div
+            class="notice"
+            style="
+              margin-top: 14px;
+              background: var(--dry-sage);
+              padding: 12px 16px;
+              border-radius: 4px;
+              border-inline-start: 4px solid var(--muted-teal);
+              font-size: 13px;
+            "
+          >
+            ⚠ عند نهاية الشهر يُصفّر العداد تلقائيًا لكل مشترك دون ترحيل الرصيد
+            المتبقي
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

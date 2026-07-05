@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الدفع | مربط الفيصل</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">مربط الفيصل</div>
+  <nav class="nav">
+    <a href="index.html">الرئيسية</a>
+    <a href="plans.html">الباقات</a>
+    <a href="booking.html">حجز حصة</a>
+    <a href="trip-booking.html">حجز رحلة</a>
+    <a href="login.html">تسجيل الدخول</a>
+    <a href="#" class="locked">حسابي</a>
+  </nav>
+</header>
+
+<div class="page">
+
+  <div class="grid-2">
+
+    <div class="section">
+      <h2 class="section-title">ملخص الطلب</h2>
+      <div class="summary-row"><span>الباقة / الحصة</span><span>قفز حواجز</span></div>
+      <div class="summary-row"><span>الموعد</span><span>الأحد — 10:00 ص</span></div>
+      <div class="summary-row"><span>المدرب</span><span>كوتش سارة</span></div>
+      <div class="summary-row"><span>الرسوم</span><span>0 ر.س (من الرصيد)</span></div>
+      <div class="summary-row total"><span>الإجمالي</span><span>750 ر.س</span></div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">طريقة الدفع</h2>
+
+      <label class="payment-option selected">
+        <input type="radio" name="pay" checked>
+        <div>
+          <p class="card-title" style="margin:0;">دفع كامل</p>
+          <p class="card-desc">750 ر.س — بطاقة / Apple Pay</p>
+        </div>
+      </label>
+
+      <label class="payment-option">
+        <input type="radio" name="pay">
+        <div>
+          <p class="card-title" style="margin:0;">Tabby — تقسيط</p>
+          <p class="card-desc">4 دفعات × 187.5 ر.س بدون فوائد</p>
+        </div>
+      </label>
+
+      <div class="form-group" style="margin-top:16px;">
+        <label>رقم البطاقة</label>
+        <input type="text" placeholder="0000 0000 0000 0000">
+      </div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label>تاريخ الانتهاء</label>
+          <input type="text" placeholder="MM/YY">
+        </div>
+        <div class="form-group">
+          <label>CVV</label>
+          <input type="text" placeholder="•••">
+        </div>
+      </div>
+
+      <a href="index.html" class="btn btn-primary" style="width:100%; text-align:center;">إتمام الدفع</a>
+    </div>
+
+  </div>
+
+  <div class="footer">مربط الفيصل اف اند ان © 2026</div>
+
+</div>
+
+</body>
+</html>

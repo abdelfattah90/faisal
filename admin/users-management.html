@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>إدارة المستخدمين | لوحة تحكم مربط الفيصل</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="logo">مربط الفيصل — لوحة التحكم</div>
+      <div class="role-tag">Admin</div>
+    </div>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="group-label">عام</div>
+        <a href="overview.html">نظرة عامة</a>
+
+        <div class="group-label">الإدارة</div>
+        <a href="plans-management.html">الباقات</a>
+        <a href="bookings-management.html">الحجوزات</a>
+        <a href="subscriptions-management.html">الاشتراكات</a>
+        <a href="trip-subscriptions-management.html">اشتراكات الرحلات</a>
+        <a href="users-management.html" class="active">المستخدمون</a>
+        <a href="coaches-management.html">المدربون</a>
+        <a href="transactions-log.html">سجل المدفوعات</a>
+
+        <div class="group-label">النظام</div>
+        <a href="admins-management.html">🔒 الأدمن والصلاحيات</a>
+        <a href="financial-reports.html">🔒 التقارير المالية</a>
+        <a href="settings.html">🔒 الإعدادات العامة</a>
+        <div class="group-label">Coach</div>
+        <a href="coach-availability.html">أوقاتي المتاحة</a>
+        <a href="coach-my-trainees.html">متدربيني</a>
+      </aside>
+
+      <main class="content">
+        <h1 class="page-title">إدارة المستخدمين (Trainees)</h1>
+
+        <div class="section">
+          <div class="toolbar">
+            <input type="text" placeholder="بحث بالاسم أو رقم الجوال..." />
+            <a href="#" class="btn btn-primary">+ إضافة مستخدم</a>
+          </div>
+
+          <table class="table">
+            <tr>
+              <th>الاسم</th>
+              <th>الجوال</th>
+              <th>الاشتراك الحالي</th>
+              <th>تاريخ التسجيل</th>
+              <th>الحالة</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>سارة أحمد</td>
+              <td>0555555555</td>
+              <td>قفز حواجز</td>
+              <td>1 مايو 2026</td>
+              <td><span class="badge badge-active">نشط</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">عرض الملف</a></td>
+            </tr>
+            <tr>
+              <td>محمد علي</td>
+              <td>0566666666</td>
+              <td>اشتراك رحلات</td>
+              <td>12 مارس 2026</td>
+              <td><span class="badge badge-active">نشط</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">عرض الملف</a></td>
+            </tr>
+            <tr>
+              <td>نورة خالد</td>
+              <td>0577777777</td>
+              <td>—</td>
+              <td>20 يناير 2026</td>
+              <td><span class="badge badge-inactive">موقوف</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">عرض الملف</a></td>
+            </tr>
+            <tr>
+              <td>فهد سعيد</td>
+              <td>0588888888</td>
+              <td>رماية أرضية</td>
+              <td>2 فبراير 2026</td>
+              <td><span class="badge badge-active">نشط</span></td>
+              <td><a href="#" class="btn btn-outline btn-sm">عرض الملف</a></td>
+            </tr>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

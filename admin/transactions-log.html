@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>سجل المدفوعات | لوحة تحكم مربط الفيصل</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">مربط الفيصل — لوحة التحكم</div>
+  <div class="role-tag">Admin</div>
+</div>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="group-label">عام</div>
+    <a href="overview.html">نظرة عامة</a>
+    <div class="group-label">الإدارة</div>
+    <a href="plans-management.html">الباقات</a>
+    <a href="bookings-management.html">الحجوزات</a>
+    <a href="subscriptions-management.html">الاشتراكات</a>
+    <a href="trip-subscriptions-management.html">اشتراكات الرحلات</a>
+    <a href="users-management.html">المستخدمون</a>
+    <a href="coaches-management.html">المدربون</a>
+    <a href="transactions-log.html" class="active">سجل المدفوعات</a>
+    <div class="group-label">النظام</div>
+    <a href="admins-management.html">🔒 الأدمن والصلاحيات</a>
+    <a href="financial-reports.html">🔒 التقارير المالية</a>
+    <a href="settings.html">🔒 الإعدادات العامة</a>
+    <div class="group-label">Coach</div>
+    <a href="coach-availability.html">أوقاتي المتاحة</a>
+    <a href="coach-my-trainees.html">متدربيني</a>
+  </aside>
+
+  <main class="content">
+    <h1 class="page-title">سجل المدفوعات والمعاملات</h1>
+
+    <div class="section">
+      <div class="toolbar">
+        <input type="text" placeholder="بحث برقم العملية أو اسم المتدرب...">
+        <select style="padding:8px 12px; border:1px solid var(--dry-sage); border-radius:5px; font-size:13px;">
+          <option>كل الطرق</option>
+          <option>بطاقة</option>
+          <option>Tabby</option>
+        </select>
+      </div>
+
+      <table class="table">
+        <tr><th>رقم العملية</th><th>المتدرب</th><th>الباقة</th><th>المبلغ</th><th>طريقة الدفع</th><th>التاريخ</th><th>الحالة</th></tr>
+        <tr>
+          <td>#TXN-1042</td><td>سارة أحمد</td><td>قفز حواجز</td><td>750 ر.س</td><td>Tabby (دفعة 1/4)</td><td>1 يوليو 2026</td>
+          <td><span class="badge badge-active">ناجحة</span></td>
+        </tr>
+        <tr>
+          <td>#TXN-1041</td><td>محمد علي</td><td>اشتراك رحلات</td><td>900 ر.س</td><td>بطاقة</td><td>30 يونيو 2026</td>
+          <td><span class="badge badge-active">ناجحة</span></td>
+        </tr>
+        <tr>
+          <td>#TXN-1040</td><td>نورة خالد</td><td>ركوب أرضي</td><td>600 ر.س</td><td>بطاقة</td><td>28 يونيو 2026</td>
+          <td><span class="badge badge-inactive">فاشلة</span></td>
+        </tr>
+        <tr>
+          <td>#TXN-1039</td><td>فهد سعيد</td><td>رماية أرضية</td><td>500 ر.س</td><td>Tabby (دفعة 2/4)</td><td>25 يونيو 2026</td>
+          <td><span class="badge badge-active">ناجحة</span></td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+</div>
+
+</body>
+</html>
